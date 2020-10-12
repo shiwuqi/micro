@@ -1,0 +1,24 @@
+{
+  "name": "micro",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "install-all": "npm-run-all install:*",
+    "install:app1": "cd app1 && npm install",
+    "install:app2": "cd app2 && npm install",
+    "install:main": "cd main && npm install",
+    "start-all": "npm-run-all --parallel start:*",
+    "start:app1": "cd app1 && npm start",
+    "start:app2": "cd app2 && npm start",
+    "start:main": "cd main && npm start",
+    "build-all": "npm-run-all --parallel build:*",
+    "build:app1": "cd app1 && npm run build",
+    "build:app2": "cd app2 && npm run build",
+    "build:main": "cd main && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
